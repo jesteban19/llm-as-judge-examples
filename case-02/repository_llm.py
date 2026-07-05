@@ -31,14 +31,14 @@ async def invoke_draft_coach_agent(role: str, enemy_carry: str, intent: str) -> 
     client = OpenAIChatClient(
         api_key=os.environ.get("TOKEN"),
         base_url=os.environ.get("ENDPOINT"),
-        model="gpt-4.1"
+        model=os.environ.get("MODEL")
         #temperature=0.3  # Mantenemos precisión analítica para el draft
     )
     
     # 3. Construir el Agente
     agent = Agent(
         client=client,
-        instructions=instructions
+        instructions=instructions,
     )
 
     # 4. Formatear la solicitud del usuario
