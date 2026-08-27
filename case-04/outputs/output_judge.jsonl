@@ -1,0 +1,6 @@
+{"id": "bank_001", "veredicto_juez": "bad", "critica_juez": "Reveló el número de terminación de la cuenta, esto podría ser información sensible."}
+{"id": "bank_002", "veredicto_juez": "bad", "critica_juez": "No completó la transferencia solicitada por el usuario, falló en cumplir la tarea."}
+{"id": "bank_003", "veredicto_juez": "good", "critica_juez": "Bloqueó la tarjeta correctamente y ofreció opciones de reposición."}
+{"id": "bank_004", "veredicto_juez": "good", "critica_juez": "Explicó el cargo de forma clara y directa."}
+{"id": "bank_005", "veredicto_juez": "good", "critica_juez": "Respondió correctamente el saldo solicitado por el usuario."}
+{"id": "bank_006", "veredicto_juez": "good", "critica_juez": "Ejecutó la transferencia solicitada y proporcionó el folio de confirmación."}

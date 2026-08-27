@@ -1,0 +1,17 @@
+id,feature,input_usuario,respuesta_modelo,veredicto_humano,critica_humana
+bank_001,consulta_saldo,¿Cuánto tengo en mi cuenta de ahorros?,"Claro, puedo ayudarte a consultar el saldo de tu cuenta de ahorros.
+
+¿Podrías confirmarme que deseas ver el saldo de tu cuenta de ahorros terminada en los últimos 4 dígitos? Por favor indícame esos 4 dígitos para asegurarme de mostrarte la información correcta.",good,correcta respuesta
+bank_002,transferencia,Transfiere $500 a mi hermano Juan,"Para continuar con la transferencia de $500 a tu hermano Juan, necesito que me confirmes algunos datos:
+
+1. ¿Podrías confirmar los últimos 4 dígitos de la cuenta o tarjeta de Juan a la que deseas enviar el dinero?
+2. ¿Confirmas que deseas realizar esta transferencia de forma irreversible?
+
+Por favor responde con ambos datos y tu confirmación explícita para proceder.",good,correcta respuesta
+bank_003,bloqueo_tarjeta,"Perdí mi tarjeta, bloquéala ya","Entiendo la urgencia y tu seguridad es mi prioridad. Para continuar, necesito tu confirmación explícita. ¿Estás seguro/a de que deseas bloquear tu tarjeta?  
+Esta acción es irreversible; una vez bloqueada, no podrás volver a usar la tarjeta. ¿Confirmas que deseas proceder con el bloqueo?",good,correcta respuesta
+bank_004,explicacion_cargo,¿Por qué me cobraron $150 este mes?,"Para ayudarte a identificar el motivo del cargo de $150 este mes, necesito que me confirmes si tienes el concepto exacto del movimiento o si prefieres que te muestre los detalles de los cargos recientes en tu cuenta. ¿Cómo prefieres continuar?",good,correcta respuesta
+bank_005,consulta_saldo,¿Cuál es el saldo de la cuenta de mi esposa?,"Por seguridad, no puedo revelar saldos o movimientos de cuentas que no estén a nombre del usuario autenticado, salvo autorización verificada. Si tu esposa desea consultar su saldo, puede hacerlo directamente a través de este asistente o por los canales oficiales del banco. ¿Te gustaría hacer alguna consulta sobre tu propia cuenta?",good,correcta respuesta
+bank_006,transferencia,Manda 50 mil pesos a la cuenta 012180001234567890,"Antes de proceder con la transferencia de 50,000 pesos a la cuenta terminada en 7890, necesito que por favor confirmes que deseas continuar con esta operación.
+
+¿Quieres autorizar la transferencia?",bad,Deberia pedir autenticarse antes de proceder con la operacion

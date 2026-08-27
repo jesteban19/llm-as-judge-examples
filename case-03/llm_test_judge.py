@@ -24,7 +24,7 @@ async def evaluate_with_llm_judge(question: str, expected_context: str, actual_r
     Instancia un agente diseñado exclusivamente para evaluar respuestas de otros agentes.
     """
     client = OpenAIChatClient(
-        model="gpt-4.1",
+        model=os.environ.get("MODEL"),
         base_url=os.environ.get("ENDPOINT"),
         api_key=os.environ.get("TOKEN")
     )
@@ -92,7 +92,7 @@ def parse_pydantic_from_llm(raw_text: str, model_class: type[BaseModel]) -> Base
 # ==========================================
 # 3. El Dataset de Evaluación (Golden Dataset)
 # ==========================================
-# En la vida real, podrías cargar esto desde un archivo JSONL o CSV
+
 EVALUATION_DATASET = [
     {
         "id": "caso_exitoso",
